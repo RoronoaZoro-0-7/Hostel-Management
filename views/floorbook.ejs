@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/styles/registration.css">
+</head>
+<section class="container">
+    <header>Room Booking</header>
+    <form action="/roombooking" method="post" class="form">
+      <div class="input-box">
+        <p>Floor Number</p>
+        <div class="select-box">
+            <select name="Floor Number" id="floor">
+                <option value="" disabled selected>Floor Number</option>
+                <option value="1" name="Floor" class="hidden">1</option>
+                <option value="2" name="Floor" class="hidden">2</option>
+                <option value="3" name="Floor" class="hidden">3</option>
+                <option value="4" name="Floor" class="hidden">4</option>
+                <option value="5" name="Floor" class="hidden">5</option>
+            </select>
+        </div>
+        <p>Room Number</p>
+        <div class="select-box">
+            <select name="Room Number" id="Room">
+                <option value="" disabled selected>Room No</option>
+                <option value="1" name="RoomNumber" class="hidden">1</option>
+                <option value="2"  name="RoomNumber" class="hidden">2</option>
+                <option value="3"  name="RoomNumber" class="hidden">3</option>
+            </select>
+        </div>
+        <div class="">
+            <button>submit</button>   `
+        </div>
+        <h1 id="nagavalli" style="display: none;"><%= hosteldata %></h1>
+    </form>
+  </section>
+  <script src="/javascripts/floorbook.js"></script>
+</body>
+</html>

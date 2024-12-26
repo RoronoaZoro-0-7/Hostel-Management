@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/styles/registration.css">
+</head>
+<section class="container">
+    <header>Room Booking</header>
+    <form action="/submit" method="post" class="form">
+        <div class="select-box">
+            <select name="Cot Number" id="Cot">
+                <option value="" disabled selected>Cot Number</option>
+                <option value="1" name="CotNumber" class="hidden">1</option>
+                <option value="2" name="CotNumber" class="hidden">2</option>
+            </select>
+        </div>
+        <div class="input-box">
+        <p>Amount</p>
+        <input type="number" id="amount" name="Amount Paid">
+        </div>
+    <div class="input-box">
+      <p>Reference Number</p>
+        <input type="text" id="duk" name="DUK Reference Number" placeholder="Payment Reference Number">
+    </div>
+    <div class="input-box">
+      <p>Amount Receipt File</p>
+        <input type="file" id="pdfFile" name="Fee Receipt" accept=".pdf">
+    </div>
+        <div class="">
+          <button>submit</button>   `
+      </div>
+    </form>
+    <h1 id="floor" style="display: none;"><%= floor %></h1>
+    <h1 id="room" style="display: none;"><%= room %></h1>
+    <h1 id="hostel" style="display: none;"><%= hosteldata %></h1>
+  </section>
+  <script src="/javascripts/cotbook.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/styles/registration.css">
+  </head>
+  <body>
+    <section class="container">
+      <header>Registration Form</header>
+      <form action="/floorbooking" method="post" class="form">
+        <div class="input-box">
+          <p>Full Name</p>
+          <input type="text" id="fullname" name="Full Name" placeholder="Enter full name" autofocus autocomplete="off" />
+        </div>
+              <div class="input-box">
+                <p>Registration Number</p>
+                <input type="number" id="registration" name="registration number" placeholder="enter your reg no" >
+            </div>
+            <div class="input-box">
+              <p>Roll Number</p>
+                <input type="number" name="Roll Number" id="roll" placeholder="Enter Roll Number" >
+            </div>
+          
+        <div class="input-box">
+          <p>Email</p>
+          <input type="text" id="email" name="Email" placeholder="Enter email address" autocomplete="email"  />
+        </div>
+        <div class="column">
+          <div class="input-box">
+            <p>Phone Number</p>
+            <input type="number" id="phonenumber" name="Phone Number" placeholder="Enter phone number"  />
+          </div>
+              
+          <div class="input-box">
+            <p>Date of Birth</p>
+            <input type="date" placeholder="Enter birth date"/>
+          </div>
+        </div>
+        <p>Department</p>
+        <div class="select-box">
+                <select name="branch" id="branch">
+                    <option value="" disabled selected>DEPARTMENT</option>
+                    <option value="cse">CSE</option>
+                    <option value="ece">ECE</option>
+                    <option value="eee">EEE</option>
+                    <option value="mech">MECH</option>
+                    <option value="civil">CIVIL</option>
+                    <option value="chem">CHEMICAL</option>
+                    <option value="metal">METUALLURGY</option>
+                </select>
+            </div>
+            <p>Gender</p>
+            <div class="select-box">
+              <label for="gender"></label>
+              <select id="gender" name="gender" required>
+                  <option value="" disabled selected>GENDER</option>
+                  <option value="Male" name="Gender">Male</option>
+                  <option value="Female" name="Gender">Female</option>
+              </select>
+          </div>
+            <p>Programme</p>
+              <div class="select-box">
+                <select name="Programme" id="program">
+                    <option value="" disabled selected>PROGRAMME</option>
+                    <option value="B.Tech" name="program">B.Tech</option>
+                    <option value="M.Tech" name="program">M.Tech</option>
+                    <option value="PHD" name="program">PHD</option>
+                </select>
+            </div>
+            <p>Year</p>
+            <div class="select-box">
+                <label for="year"></label>
+                <select id="year" name="year" required>
+                    <option value="" disabled selected>CURRENT YEAR</option>
+                    <option value="1" name="year">1</option>
+                    <option value="2" name="year">2</option>
+                    <option value="3" name="year">3</option>
+                    <option value="4" name="year">4</option>
+                </select>
+            </div>
+        <p>Hostel Block</p>
+            <div class="select-box">
+              <!-- <label for="hostel">Hostel Block</label> -->
+              <select name="Hostel Block" id="hostel" class="hostel">
+                <option value="" disabled selected>HOSTEL BLOCK</option>
+                <option value="Vamsadhara" name="HostelBlock" class="hidden">Vamsadhara</option>
+                <option value="Nagavalli" name="HostelBlock" class="hidden">Nagavalli</option>
+                <option value="Pranahitha" name="HostelBlock" class="hidden">Pranahitha</option>
+                <option value="Indravathi" name="HostelBlock" class="hidden">Indravathi</option>
+                <option value="Sabari" name="HostelBlock" class="hidden">Sabari</option>
+                <option value="Purna" name="HostelBlock" class="hidden">Purna</option>
+                <option value="Banganga" name="HostelBlock" class="hidden">Banganga</option>
+                <option value="Manjeera" name="HostelBlock" class="hidden">Manjeera</option>
+                <option value="Swarnamukhi" name="HostelBlock" class="hidden">Swarnamukhi</option>
+                <option value="Krishna veni" name="HostelBlock" class="hidden">Krishna veni</option>
+                <option value="Bhima" name="HostelBlock" class="hidden">Bhima</option>
+                <option value="Thungabhadra" name="HostelBlock" class="hidden">Thungabhadra</option>
+                <option value="Ghataprabha" name="HostelBlock" class="hidden">Ghataprabha</option>
+                <option value="Munneru" name="HostelBlock" class="hidden">Munneru</option>
+            </select>
+            
+        </div>
+      <div class="">
+          <button>submit</button>
+      </div>
+      </form>
+    </section>
+    <h1 id="nagavalli" style="display: none;"><%= hosteldata %></h1>
+    <script src="/javascripts/registration.js"></script>
+    <script src="javascripts/a.js"></script>
+  </body>
+</html>
